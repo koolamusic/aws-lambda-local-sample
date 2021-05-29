@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lambda-local -l dist/index.js -h handler -e payload-api-gateway.js",
+    "dev:watch": "lambda-local -l dist/index.js -h handler --watch 4000",
     "invoke": "npm run tsc && npm run dev",
+    "invoke:watch": "npm run tsc && npm run dev:watch",
     "tsc": "tsc"
   },
   "keywords": [],

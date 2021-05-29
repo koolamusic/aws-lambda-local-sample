@@ -5,7 +5,7 @@ const handler = async (event, context) => {
     // console.log("EVENT: \n" + JSON.stringify(event, null, 2), event.path)
     console.log("EVENT", event.path);
     console.log("overridse", context.logStreamName);
-    return context.logStreamName;
+    return event;
 };
 exports.handler = handler;
 /*

@@ -2,7 +2,7 @@ export const handler = async (event: any, context: any): Promise<any> => {
     // console.log("EVENT: \n" + JSON.stringify(event, null, 2), event.path)
     console.log("EVENT", event.path)
     console.log("overridse", context.logStreamName)
-    return context.logStreamName
+    return event
 }
 
 
