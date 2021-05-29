@@ -1,0 +1,20 @@
+{
+  "name": "hello-lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lambda-local -l dist/index.js -h handler -e payload-api-gateway.js",
+    "invoke": "npm run tsc && npm run dev",
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.6.1",
+    "lambda-local": "^1.7.4",
+    "ts-node": "^10.0.0"
+  }
+}
